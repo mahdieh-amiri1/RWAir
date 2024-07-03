@@ -1,0 +1,124 @@
+{
+  "interval": 2000,
+  "priceAggregator": "median",
+  "defaultSource": ["coingecko"],
+  "sourceTimeout": 2000,
+  "minValidSourcesPercentage": 1,
+  "deviationCheck": {
+    "deviationWithRecentValues": {
+      "maxPercent": 30,
+      "maxDelayMilliseconds": 300000
+    }
+  },
+  "tokens": {
+    "USDC": {
+      "source": [
+        "binance-usdt",
+        "binanceusdm-usdt",
+        "bitget-usdt",
+        "bitmart-usdt",
+        "bitrue-usdt",
+        "bitstamp-usd",
+        "coingecko",
+        "coinmarketcap",
+        "curve-ethereum-dai",
+        "curve-ethereum-usdt",
+        "kaiko",
+        "kaiko-v2",
+        "kraken-usdt",
+        "kucoin-usdt",
+        "lbank-usdt",
+        "maverick-ethereum-usdt",
+        "mexc-usdt",
+        "okx-usdt",
+        "uniswap-v3-ethereum-dai-100"
+      ],
+      "deviationCheck": {
+        "deviationWithRecentValues": {
+          "maxPercent": 5,
+          "maxDelayMilliseconds": 300000
+        }
+      },
+      "skipBroadcasting": true
+    },
+    "USDT": {
+      "source": [
+        "bitstamp-usd",
+        "coinbasepro-usd",
+        "coingecko",
+        "coinmarketcap",
+        "kaiko",
+        "kaiko-v2"
+      ],
+      "deviationCheck": {
+        "deviationWithRecentValues": {
+          "maxPercent": 5,
+          "maxDelayMilliseconds": 300000
+        }
+      },
+      "skipBroadcasting": true
+    },
+    "DAI": {
+      "source": [
+        "bitget-usdt",
+        "bitmart-usdt",
+        "bitrue-usdt",
+        "coinbasepro-usd",
+        "coingecko",
+        "coinmarketcap",
+        "kraken-usd",
+        "curve-ethereum-usdt",
+        "mexc-usdt",
+        "okx-usdt",
+        "xt"
+      ],
+      "deviationCheck": {
+        "deviationWithRecentValues": {
+          "maxPercent": 5,
+          "maxDelayMilliseconds": 300000
+        }
+      },
+      "skipBroadcasting": true
+    },
+    "BNB": {
+      "source": [
+        "binance-usdt",
+        "binancecoinm-usd",
+        "binanceusdm-usdt",
+        "bitget-usdt",
+        "bitmart-usdt",
+        "coingecko",
+        "coinmarketcap",
+        "kucoin-usdt",
+        "mexc-usdt",
+        "lbank-usdt",
+        "okx-usdt",
+        "xt"
+      ]
+    },
+    "BTC": {
+      "source": [
+        "binance-usdt",
+        "binancecoinm-usd",
+        "binanceusdm-usdt",
+        "bingx-usdt",
+        "bitfinex2-usd",
+        "bitget-usdt",
+        "bitrue-usdt",
+        "bitmart-usdt",
+        "bitstamp-usd",
+        "coinbasepro-usd",
+        "coingecko",
+        "coinmarketcap",
+        "kaiko",
+        "kaiko-v2",
+        "kraken-usd",
+        "kucoin-usdt",
+        "lbank-usdt",
+        "mexc-usdt",
+        "okx-usdt",
+        "xt"
+      ]
+    }
+  }
+}
